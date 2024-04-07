@@ -4,7 +4,8 @@ public class MasterKart implements IKart {
 	private Hesap hesap;
 	private String sifre;
 	
-	public MasterKart(Hesap hesap, String sifre) {
+	public MasterKart(Hesap hesap, String sifre) 
+	{
 		this.hesap = hesap;
 		this.sifre = sifre;
 	}
