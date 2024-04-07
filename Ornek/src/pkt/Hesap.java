@@ -32,14 +32,14 @@ public class Hesap implements IHesap {
 		bakiye -= miktar;
 		return true;
 	}
-	
-	public boolean paraGotur(double miktar) {
+
+	@Override
+	public void paraGotur(double miktar) {
 		/*
 		 * Ön miktar kontrol ediliyor.
 		 */
 		if(miktar <= 0 || miktar > bakiye) return false;
 		bakiye -= miktar;
-		return true;
 	}
 	
 	@Override
