@@ -33,7 +33,6 @@ public class Hesap implements IHesap {
 		return true;
 	}
 	
-	@Override
 	public boolean paraGotur(double miktar) {
 		/*
 		 * Ön miktar kontrol ediliyor.
