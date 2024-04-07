@@ -7,7 +7,7 @@ import java.util.UUID;
  * @author MFA
  *
  */
-public class Hesap {
+public class Hesap implements IHesap {
 	private String no;
 	private double bakiye;
 	
@@ -32,7 +32,17 @@ public class Hesap {
 		bakiye -= miktar;
 		return true;
 	}
-
+	
+	@Override
+	public boolean paraGotur(double miktar) {
+		/*
+		 * Ön miktar kontrol ediliyor.
+		 */
+		if(miktar <= 0 || miktar > bakiye) return false;
+		bakiye -= miktar;
+		return true;
+	}
+	
 	@Override
 	public boolean paraYatir(double miktar) {
 		if(miktar <= 0) return false; // miktar kontrolü
