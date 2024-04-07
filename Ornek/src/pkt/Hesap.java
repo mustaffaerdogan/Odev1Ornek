@@ -11,7 +11,7 @@ public class Hesap implements IHesap {
 	private String no;
 	private double bakiye;
 	
-	public Hesap()
+	public Hesaab()
 	{
 		this.no = UUID.randomUUID().toString(); // Rastgele bir Id belirleniyor...
 		// Hesap açılışı bakiye sıfır.
