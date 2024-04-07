@@ -5,7 +5,8 @@ package pkt;
  * @author MFA
  *
  */
-public class Atm {
+public class Atm
+	{
 	/**
 	 * <p>
 	 *   Atm'den para çekme işlemi
